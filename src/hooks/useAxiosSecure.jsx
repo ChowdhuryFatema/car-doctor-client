@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
-const axiosSecure = axios.create({
+export const axiosSecure = axios.create({
     baseURL: 'https://car-doctor-server-seven-lemon.vercel.app',
     withCredentials: true
 })
